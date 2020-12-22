@@ -1,3 +1,13 @@
-
+@font-face {
+  font-family: "font-title";
+  src: url("polices/Shrikhand/Shrikhand-Regular.ttf"); }
+@font-face {
+  font-family: "font-text";
+  src: url("polices/Roboto/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "font-bold";
+  src: url("polices/Roboto/Roboto-Bold.ttf"); }
+body {
+  font-family: "font-text"; }
 
 /*# sourceMappingURL=style.css.map */
