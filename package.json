@@ -1,0 +1,23 @@
+{
+  "name": "web_site_ohmyfood",
+  "version": "1.0.0",
+  "description": "site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./public/css/style.css -w --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibLGX/ThibaudLegoux_3_22122020.git"
+  },
+  "keywords": [
+    "Oh My Food"
+  ],
+  "author": "Thibaud Legoux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThibLGX/ThibaudLegoux_3_22122020/issues"
+  },
+  "homepage": "https://github.com/ThibLGX/ThibaudLegoux_3_22122020#readme"
+}
