@@ -7,7 +7,273 @@
 @font-face {
   font-family: "font-bold";
   src: url("polices/Roboto/Roboto-Bold.ttf"); }
+@font-face {
+  font-family: "font-light";
+  src: url("polices/Roboto/Roboto-Light.ttf"); }
+@font-face {
+  font-family: "font-thin";
+  src: url("polices/Roboto/Roboto-Thin.ttf"); }
 body {
-  font-family: "font-text"; }
+  font-family: "font-text";
+  margin: 0;
+  padding: 0; }
+
+header {
+  font-family: "font-title";
+  font-size: 30px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+.search__lieu {
+  background-color: #eeeeee;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: inset 0 3px 5px #c5c5c5; }
+  .search__lieu__label {
+    color: rgba(0, 0, 0, 0.705); }
+  .search__lieu__input {
+    font-family: "font-bold";
+    font-weight: lighter;
+    font-size: 95%;
+    border: 0;
+    width: 33%;
+    padding-left: 5px;
+    outline: 0;
+    color: black;
+    background: transparent; }
+    .search__lieu__input::placeholder {
+      color: rgba(0, 0, 0, 0.705); }
+.search__reserv {
+  padding-top: 15px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: rgba(241, 240, 240, 0.719); }
+  .search__reserv__titre {
+    font-family: "font-bold";
+    font-size: 24px;
+    padding: 0px 70px 0 70px; }
+  .search__reserv__descript {
+    font-size: 17px;
+    padding: 0 15px 0 15px;
+    font-family: "font-thin"; }
+  .search__reserv__btn {
+    margin-top: 15px;
+    border: 0;
+    border-radius: 30px;
+    padding: 15px 25px 15px 25px;
+    color: white;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233); }
+
+.fonctionnement {
+  padding-bottom: 20px; }
+  .fonctionnement__titre {
+    font-family: "font-bold";
+    font-size: 22px;
+    padding-top: 40px;
+    padding-left: 20px; }
+  .fonctionnement__choix {
+    position: relative; }
+    .fonctionnement__choix .case1 {
+      background-color: rgba(241, 240, 240, 0.719);
+      border-radius: 25px;
+      box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
+      font-weight: 800;
+      padding: 25px 10px 25px 30px;
+      margin-left: 25px;
+      margin-right: 15px;
+      margin-bottom: 25px; }
+      .fonctionnement__choix .case1 i {
+        color: rgba(0, 0, 0, 0.705);
+        padding-right: 25px;
+        font-size: 20px; }
+    .fonctionnement__choix .num1 {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      background-color: #9356DC;
+      padding: 3px;
+      width: 17px;
+      border-radius: 20px;
+      position: absolute;
+      top: 25px;
+      left: 14px; }
+  .fonctionnement__compo {
+    position: relative; }
+    .fonctionnement__compo .case2 {
+      background-color: rgba(241, 240, 240, 0.719);
+      border-radius: 25px;
+      box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
+      font-weight: 800;
+      padding: 25px 10px 25px 30px;
+      margin-left: 25px;
+      margin-right: 15px;
+      margin-bottom: 25px; }
+      .fonctionnement__compo .case2 i {
+        color: rgba(0, 0, 0, 0.705);
+        padding-right: 25px;
+        font-size: 20px; }
+    .fonctionnement__compo .num2 {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      background-color: #9356DC;
+      padding: 3px;
+      width: 17px;
+      border-radius: 20px;
+      position: absolute;
+      top: 25px;
+      left: 14px; }
+  .fonctionnement__degust {
+    position: relative; }
+    .fonctionnement__degust .case3 {
+      background-color: rgba(241, 240, 240, 0.719);
+      border-radius: 25px;
+      box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
+      font-weight: 800;
+      padding: 25px 10px 25px 30px;
+      margin-left: 25px;
+      margin-right: 15px;
+      margin-bottom: 25px;
+      background-color: rgba(147, 86, 220, 0.2); }
+      .fonctionnement__degust .case3 i {
+        color: rgba(0, 0, 0, 0.705);
+        padding-right: 25px;
+        font-size: 20px; }
+      .fonctionnement__degust .case3 i {
+        color: #9356DC; }
+    .fonctionnement__degust .num3 {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      background-color: #9356DC;
+      padding: 3px;
+      width: 17px;
+      border-radius: 20px;
+      position: absolute;
+      top: 25px;
+      left: 14px; }
+
+.restau {
+  background-color: rgba(241, 240, 240, 0.719);
+  padding-bottom: 35px; }
+  .restau a {
+    text-decoration: none;
+    color: black; }
+  .restau__titre {
+    font-family: "font-bold";
+    font-size: 22px;
+    padding-top: 40px;
+    padding-left: 20px; }
+  .restau__palette {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+    position: relative; }
+    .restau__palette img {
+      width: 100%;
+      height: 150px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover; }
+    .restau__palette .gras {
+      font-family: "font-bold";
+      margin-left: 20px; }
+    .restau__palette .thin {
+      font-family: "font-thin";
+      margin-left: 20px;
+      margin-top: -12px;
+      padding-bottom: 10px; }
+    .restau__palette i {
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+      font-size: 25px; }
+  .restau__note {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+    position: relative; }
+    .restau__note img {
+      width: 100%;
+      height: 150px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover; }
+    .restau__note .gras {
+      font-family: "font-bold";
+      margin-left: 20px; }
+    .restau__note .thin {
+      font-family: "font-thin";
+      margin-left: 20px;
+      margin-top: -12px;
+      padding-bottom: 10px; }
+    .restau__note i {
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+      font-size: 25px; }
+  .restau__fr {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+    position: relative; }
+    .restau__fr img {
+      width: 100%;
+      height: 150px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover; }
+    .restau__fr .gras {
+      font-family: "font-bold";
+      margin-left: 20px; }
+    .restau__fr .thin {
+      font-family: "font-thin";
+      margin-left: 20px;
+      margin-top: -12px;
+      padding-bottom: 10px; }
+    .restau__fr i {
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+      font-size: 25px; }
+  .restau__delice {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+    position: relative; }
+    .restau__delice img {
+      width: 100%;
+      height: 150px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover; }
+    .restau__delice .gras {
+      font-family: "font-bold";
+      margin-left: 20px; }
+    .restau__delice .thin {
+      font-family: "font-thin";
+      margin-left: 20px;
+      margin-top: -12px;
+      padding-bottom: 10px; }
+    .restau__delice i {
+      position: absolute;
+      right: 30px;
+      bottom: 20px;
+      font-size: 25px; }
+
+.foot {
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+  padding: 10px 20px 20px 25px; }
+  .foot__titre {
+    font-family: "font-title";
+    font-size: 18px; }
+  .foot__parag {
+    line-height: 28px; }
+  .foot i {
+    padding-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

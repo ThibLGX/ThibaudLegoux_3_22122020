@@ -12,6 +12,212 @@
     font-family: "font-bold";
     src: url("polices/Roboto/Roboto-Bold.ttf");
 }
+@font-face{
+    font-family: "font-light";
+    src: url("polices/Roboto/Roboto-Light.ttf");
+}
+@font-face{
+    font-family: "font-thin";
+    src: url("polices/Roboto/Roboto-Thin.ttf");
+}
 body{
     font-family: "font-text";
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-family: "font-title";
+    font-size: 30px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.search{
+    &__lieu{
+        background-color: rgb(238, 238, 238);
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        box-shadow: inset 0 3px 5px #c5c5c5;;
+        &__label{
+            color: rgba(0, 0, 0, 0.705);
+         }
+        &__input{
+            font-family: "font-bold";
+            font-weight: lighter;
+            font-size: 95%;
+            border: 0;
+            width: 33%;
+            padding-left: 5px;
+            outline: 0;
+            color: black;
+            background: transparent;
+            &::placeholder {
+            color: rgba(0, 0, 0, 0.705);
+            }
+        }
+    }
+    &__reserv{
+        padding-top: 15px;
+        padding-bottom: 40px;
+        text-align: center;
+        background-color: rgba(241, 240, 240, 0.719);
+        &__titre{
+            font-family: "font-bold";
+            font-size: 24px;
+            padding: 0px 70px 0 70px;
+        }
+        &__descript{
+            font-size: 17px;
+            padding: 0 15px 0 15px;
+            font-family: "font-thin";
+        }
+        &__btn{
+            margin-top: 15px;
+            border: 0;
+            border-radius: 30px;
+            padding: 15px 25px 15px 25px;
+            color: white;
+            background: linear-gradient(to bottom right,$secondaire, $primaire);
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233)
+        }
+    }
+}
+@mixin case {
+    background-color: rgba(241, 240, 240, 0.719);
+            border-radius: 25px;
+            box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
+            font-weight: 800;
+            padding: 25px 10px 25px 30px;
+            margin-left: 25px;
+            margin-right: 15px;
+            margin-bottom: 25px;
+            i{
+                color: rgba(0, 0, 0, 0.705);
+                padding-right: 25px;
+                font-size: 20px;
+            }
+}
+@mixin num {
+    color: white;
+            font-size: 14px;
+            text-align: center;
+            background-color: $primaire;
+            padding: 3px;
+            width: 17px;
+            border-radius: 20px;
+            position: absolute;
+            top: 25px;
+            left: 14px;
+}
+@mixin titre-home {
+    font-family: "font-bold";
+    font-size: 22px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.fonctionnement{
+    padding-bottom: 20px;
+    &__titre{
+        @include titre-home;
+    }
+    &__choix{
+        position: relative;
+        .case1{
+          @include case;
+        }
+        .num1{
+            @include num;
+        }
+    }
+    &__compo{
+        position: relative;
+        .case2{
+        @include case;
+        }
+        .num2{
+            @include num;
+        }
+    }
+    &__degust{
+        position: relative;
+        .case3{
+            @include case;
+            background-color: $primaire-opacity2;
+            i{
+                color: $primaire;
+            }
+        }
+        .num3{
+            @include num;
+        }
+    }
+}
+@mixin vignette {
+    margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+        position: relative;
+        img{
+            width: 100%;
+            height: 150px;
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+        }
+        .gras{
+            font-family: "font-bold";
+            margin-left: 20px;
+        }
+        .thin{
+            font-family: "font-thin";
+            margin-left: 20px;
+            margin-top: -12px;
+            padding-bottom: 10px;
+        }
+        i{
+            position: absolute;
+            right: 30px;
+            bottom: 20px;
+            font-size: 25px;
+        }
+    
+}
+.restau{
+    background-color: rgba(241, 240, 240, 0.719);
+    padding-bottom: 35px;
+    a{
+        text-decoration: none;
+        color: black
+    }
+    &__titre{
+        @include titre-home;
+    }
+    &__palette{
+        @include vignette;
+    }
+    &__note{
+        @include vignette;
+    }
+    &__fr{
+        @include vignette;
+    }
+    &__delice{
+        @include vignette;
+    }
+}
+.foot{
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+  padding: 10px 20px 20px 25px;
+  &__titre{
+    font-family: "font-title";
+    font-size: 18px;
+  }
+  &__parag{
+      line-height: 28px;
+  }
+  i{
+      padding-right: 10px;
+  }
 }
