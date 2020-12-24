@@ -1,0 +1,33 @@
+@media only screen and (min-device-width : 768px){
+    
+    body header{
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .fonctionnement{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &__titre{
+            width: 100%;
+            margin-top: 0px;
+            padding-bottom: 20px;
+        }
+        div{
+            width: 250px;
+        }
+    }
+    .restau{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &__titre{
+            width: 100%;
+        }
+        article{
+            width: 340px;
+            margin-bottom: 50px;
+        }
+    }
+}

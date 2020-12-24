@@ -1,3 +1,29 @@
+@media only screen and (min-device-width: 768px) {
+  body header {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+  .fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .fonctionnement__titre {
+      width: 100%;
+      margin-top: 0px;
+      padding-bottom: 20px; }
+    .fonctionnement div {
+      width: 250px; }
+
+  .restau {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .restau__titre {
+      width: 100%; }
+    .restau article {
+      width: 340px;
+      margin-bottom: 50px; } }
 @font-face {
   font-family: "font-title";
   src: url("polices/Shrikhand/Shrikhand-Regular.ttf"); }
@@ -32,18 +58,22 @@ header {
   padding-bottom: 15px;
   box-shadow: inset 0 3px 5px #c5c5c5; }
   .search__lieu__label {
-    color: rgba(0, 0, 0, 0.705); }
+    color: rgba(0, 0, 0, 0.705);
+    margin-right: -5px; }
   .search__lieu__input {
     font-family: "font-bold";
     font-weight: lighter;
     font-size: 95%;
     border: 0;
-    width: 33%;
-    padding-left: 5px;
     outline: 0;
     color: black;
-    background: transparent; }
+    background: transparent;
+    text-align: center;
+    width: 150px; }
     .search__lieu__input::placeholder {
+      padding-left: 15px;
+      text-align: start;
+      width: 50px;
       color: rgba(0, 0, 0, 0.705); }
 .search__reserv {
   padding-top: 15px;
@@ -63,9 +93,11 @@ header {
     border: 0;
     border-radius: 30px;
     padding: 15px 25px 15px 25px;
-    color: white;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233); }
+  .search__reserv a {
+    text-decoration: none;
+    color: white; }
 
 .fonctionnement {
   padding-bottom: 20px; }
@@ -175,9 +207,10 @@ header {
     position: relative; }
     .restau__palette img {
       width: 100%;
-      height: 150px;
+      height: 200px;
       border-radius: 20px 20px 0 0;
-      object-fit: cover; }
+      object-fit: cover;
+      object-position: 50% 80%; }
     .restau__palette .gras {
       font-family: "font-bold";
       margin-left: 20px; }
@@ -199,9 +232,10 @@ header {
     position: relative; }
     .restau__note img {
       width: 100%;
-      height: 150px;
+      height: 200px;
       border-radius: 20px 20px 0 0;
-      object-fit: cover; }
+      object-fit: cover;
+      object-position: 50% 80%; }
     .restau__note .gras {
       font-family: "font-bold";
       margin-left: 20px; }
@@ -215,6 +249,8 @@ header {
       right: 30px;
       bottom: 20px;
       font-size: 25px; }
+    .restau__note img {
+      object-position: 50% 60%; }
   .restau__fr {
     margin-left: 20px;
     margin-right: 20px;
@@ -223,9 +259,10 @@ header {
     position: relative; }
     .restau__fr img {
       width: 100%;
-      height: 150px;
+      height: 200px;
       border-radius: 20px 20px 0 0;
-      object-fit: cover; }
+      object-fit: cover;
+      object-position: 50% 80%; }
     .restau__fr .gras {
       font-family: "font-bold";
       margin-left: 20px; }
@@ -247,9 +284,10 @@ header {
     position: relative; }
     .restau__delice img {
       width: 100%;
-      height: 150px;
+      height: 200px;
       border-radius: 20px 20px 0 0;
-      object-fit: cover; }
+      object-fit: cover;
+      object-position: 50% 80%; }
     .restau__delice .gras {
       font-family: "font-bold";
       margin-left: 20px; }
