@@ -60,5 +60,15 @@
             bottom: 20px;
             font-size: 25px;
         }
+        .lock:hover #lock1,
+        .lock #unlock1 {
+        display: none;
+        background: -webkit-gradient(linear, left top, left bottom, from($primaire), to($secondaire));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+        .lock:hover #unlock1 {
+        display: inline;
+        }
     
 }
