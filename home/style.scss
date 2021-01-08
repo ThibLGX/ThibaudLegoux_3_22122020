@@ -1,6 +1,6 @@
-@import "./utils/variables";
-@import "media";
-@import "mixin-index.scss";
+@import "../variables";
+@import "../media";
+@import "../mixin-index.scss";
 
 body{
     font-family: "font-text";
@@ -138,17 +138,5 @@ header{
     }
 }
 .foot{
-  background-color: $grey-dark;
-  color: $color-font-footer;
-  padding: 10px 20px 20px 25px;
-  &__titre{
-    font-family: "font-title";
-    font-size: 18px;
-  }
-  &__parag{
-      line-height: 28px;
-  }
-  i{
-      padding-right: 10px;
-  }
+  @include foot;
 }

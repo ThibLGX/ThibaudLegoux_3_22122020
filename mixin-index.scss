@@ -72,3 +72,22 @@
         }
     
 }
+@mixin foot {
+    background-color: $grey-dark;
+    color: $color-font-footer;
+    padding: 10px 20px 20px 25px;
+    &__titre{
+    font-family: "font-title";
+    font-size: 18px;
+  }
+  &__parag{
+      line-height: 28px;
+      a{
+        text-decoration: none;
+        color: white;
+        }
+  }
+  i{
+      padding-right: 10px;
+  }
+}
