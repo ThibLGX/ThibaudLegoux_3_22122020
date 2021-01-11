@@ -39,6 +39,44 @@
     .restau article {
       width: 340px;
       margin-bottom: 50px; } }
+@keyframes rempl {
+  0% {
+    transform: scale(0.3); }
+  100% {
+    transform: scale(1); } }
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  animation: backload 2.1s forwards;
+  display: flex;
+  justify-content: center;
+  padding-top: 20%; }
+  .loader__cercle {
+    border: 16px solid #9356DC;
+    border-top: 16px solid #FF79DA;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: loading 2s linear forwards; }
+
+@keyframes backload {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes loading {
+  0% {
+    transform: rotate(0deg); }
+  90% {
+    opacity: 0.7; }
+  100% {
+    transform: rotate(660deg);
+    opacity: 0; } }
 body {
   font-family: "font-text";
   margin: 0;
@@ -98,6 +136,9 @@ header {
   .search__reserv a {
     text-decoration: none;
     color: white; }
+  .search__reserv button:hover {
+    opacity: 0.8;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
 
 .fonctionnement {
   padding-bottom: 20px; }
@@ -132,6 +173,9 @@ header {
       position: absolute;
       top: 25px;
       left: 14px; }
+    .fonctionnement__choix div:hover {
+      opacity: 0.8;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
   .fonctionnement__compo {
     position: relative; }
     .fonctionnement__compo .case2 {
@@ -158,6 +202,9 @@ header {
       position: absolute;
       top: 25px;
       left: 14px; }
+    .fonctionnement__compo div:hover {
+      opacity: 0.8;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
   .fonctionnement__degust {
     position: relative; }
     .fonctionnement__degust .case3 {
@@ -187,6 +234,9 @@ header {
       position: absolute;
       top: 25px;
       left: 14px; }
+    .fonctionnement__degust div:hover {
+      opacity: 0.8;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
 
 .restau {
   background-color: rgba(241, 240, 240, 0.719);
@@ -231,6 +281,9 @@ header {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .restau__palette .lock:hover #unlock1 {
+      animation: rempl 2s ease-in-out 0.5s;
+      animation-fill-mode: forwards;
+      transform-origin: center;
       display: inline; }
   .restau__note {
     margin-left: 20px;
@@ -264,6 +317,9 @@ header {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .restau__note .lock:hover #unlock1 {
+      animation: rempl 2s ease-in-out 0.5s;
+      animation-fill-mode: forwards;
+      transform-origin: center;
       display: inline; }
     .restau__note img {
       object-position: 50% 60%; }
@@ -299,6 +355,9 @@ header {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .restau__fr .lock:hover #unlock1 {
+      animation: rempl 2s ease-in-out 0.5s;
+      animation-fill-mode: forwards;
+      transform-origin: center;
       display: inline; }
   .restau__delice {
     margin-left: 20px;
@@ -332,6 +391,9 @@ header {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .restau__delice .lock:hover #unlock1 {
+      animation: rempl 2s ease-in-out 0.5s;
+      animation-fill-mode: forwards;
+      transform-origin: center;
       display: inline; }
 
 .foot {
@@ -347,7 +409,6 @@ header {
       text-decoration: none;
       color: white; }
   .foot i {
-    padding-right: 10px;
-    color: red; }
+    padding-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

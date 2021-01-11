@@ -1,5 +1,14 @@
+@keyframes rempl {
+    0% {
+        transform: scale(0.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 @mixin case {
-    background-color: $grey-light;
+            background-color: $grey-light;
             border-radius: 25px;
             box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
             font-weight: 800;
@@ -32,7 +41,7 @@
     padding-left: 20px;
 }
 @mixin vignette {
-    margin-left: 20px;
+        margin-left: 20px;
         margin-right: 20px;
         border-radius: 20px;
         box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
@@ -67,11 +76,19 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         }
-        .lock:hover #unlock1 {
-        display: inline;
+        .lock:hover #unlock1 {   
+        animation: rempl 2s ease-in-out 0.5s;
+        animation-fill-mode:forwards ;
+        transform-origin: center;
+            display: inline;
         }
-    
 }
+
+@mixin hoverbut {
+    opacity: 0.8;
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637);
+}
+
 @mixin foot {
     background-color: $grey-dark;
     color: $color-font-footer;

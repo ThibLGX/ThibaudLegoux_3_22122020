@@ -2,6 +2,37 @@
 @import "../media";
 @import "../mixin-index.scss";
 
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    animation: backload 2.1s forwards;
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+    &__cercle{
+    border: 16px solid $primaire;
+    border-top: 16px solid $secondaire; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: loading 2s linear forwards;
+    }
+  }
+  @keyframes backload{
+      0%{opacity: 1;}
+      90%{opacity: 1;}
+      100%{opacity: 0;}
+  }
+  @keyframes loading {
+    0% { transform: rotate(0deg); }
+    90%{opacity: 0.7;}
+    100% { transform: rotate(660deg);
+    opacity: 0; }
+  }
+
 body{
     font-family: "font-text";
     margin: 0;
@@ -64,11 +95,14 @@ header{
             border-radius: 30px;
             padding: 15px 25px 15px 25px;
             background: linear-gradient(to bottom right,$secondaire, $primaire);
-            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233)
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
         }
         a{
             text-decoration:none ;
             color: white;
+        }
+        button:hover{
+            @include hoverbut;
         }
     }
 }
@@ -86,6 +120,9 @@ header{
         .num1{
             @include num;
         }
+       div:hover{
+        @include hoverbut;
+        }
     }
     &__compo{
         position: relative;
@@ -95,6 +132,9 @@ header{
         .num2{
             @include num;
         }
+        div:hover{
+            @include hoverbut;
+            }
     }
     &__degust{
         position: relative;
@@ -108,6 +148,9 @@ header{
         .num3{
             @include num;
         }
+        div:hover{
+            @include hoverbut;
+            }
     }
 }
 
@@ -135,6 +178,7 @@ header{
     }
     &__delice{
         @include vignette;
+
     }
 }
 .foot{
