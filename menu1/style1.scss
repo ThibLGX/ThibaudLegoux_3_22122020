@@ -118,11 +118,16 @@ header{
             border-radius: 20px;
             background-color: white;
             padding-left: 10px;
+            border-right: 15px solid orange;
+            :active{
+                border-right: 30px solid orange;
+            }
             .bold, span{
                 font-family: "font-bold";
             }
             opacity: 0;
             animation: opac 2s ease-in-out 2s forwards;
+            
         }
     }
 }
