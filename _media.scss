@@ -1,5 +1,5 @@
-@media only screen and (min-device-width : 768px){
-    
+@media only screen and (min-device-width : 768px)
+{
     body header{
         font-size: 40px;
         margin-top: 10px;
@@ -28,6 +28,17 @@
         article{
             width: 340px;
             margin-bottom: 50px;
+        }
+    }
+    .palette__titre{
+        color: red;
+    }
+    .pic{
+        height: 500px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-position: 50% 50%;
         }
     }
 }
