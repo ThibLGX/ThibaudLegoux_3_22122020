@@ -71,7 +71,7 @@ header{
         -webkit-text-fill-color: transparent;
         }
         .lock:hover #unlock1 {
-        animation: rempl 2s ease-in-out 0.5s forwards;
+        animation: rempl 2s ease-in-out 0s forwards;
         transform-origin: center;
         display: inline;
         }
@@ -79,14 +79,15 @@ header{
     @keyframes rempl{
         0% {
             transform: scale(0.3);
+           
         }
         100% {
             transform: scale(1);
+            
         }
     }
     
     &__entree{
-        border: 1px solid blue;
         margin: 0 20px 0 20px;
         &__titre{
             font-family: "font-thin";
@@ -94,55 +95,67 @@ header{
             padding-bottom: 5px;
             width: 50px;
         }
-        &__frica{
-            border: 1px solid green;
-            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
-            margin-top: 10px;
-            border-radius: 20px;
-            background-color: white;
-            padding-left: 10px;
-            .bold, span{
-                font-family: "font-bold";
-            }
-            opacity: 0;
-            animation: opac 2s ease-in-out 1s forwards;
-            &:active{
-                background-color: blueviolet;
-            }
+        &__1 {
+            @include thumb;
+            animation-delay: 0.5s;
+          }
+
+          &__2 {
+            @include thumb;
+            animation-delay: 1s;
+          }
+
+          &__3 {
+            @include thumb;
+            animation-delay: 1.5s;
+          }
+    }
+    &__plat{
+        margin: 30px 20px 0 20px;
+        &__titre{
+            font-family: "font-thin";
+            border-bottom: 2px solid $tertiaire;
+            padding-bottom: 5px;
+            width: 50px;
         }
-        &__foie{
-            border: 1px solid green;
-            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
-            margin-top: 10px;
-            border-radius: 20px;
-            background-color: white;
-            padding-left: 10px;
-            .bold, span{
-                font-family: "font-bold";
-            }
-            opacity: 0;
-            animation: opac 2s ease-in-out 1.5s forwards;
+        &__1 {
+            @include thumb;
+            animation-delay: 0.5s;
+          }
+
+          &__2 {
+            @include thumb;
+            animation-delay: 1s;
+          }
+
+          &__3 {
+            @include thumb;
+            animation-delay: 1.5s;
+          }
+    }
+    &__dessert{
+        margin: 30px 20px 0px 20px;
+        padding-bottom: 20px;
+        &__titre{
+            font-family: "font-thin";
+            border-bottom: 2px solid $tertiaire;
+            padding-bottom: 5px;
+            width: 50px;
         }
-        &__ouef{
-            
-            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
-            margin-top: 10px;
-            border-radius: 20px;
-            background-color: white;
-            padding-left: 10px;
-            .bold, span{
-                font-family: "font-bold";
-            }
-            opacity: 0;
-            animation: opac 2s ease-in-out 2s forwards;
-            border-radius: 0.5rem;
-            border-right: 0 solid #00ff99;
-            transition: border-right 300ms ease-in-out, padding-right 300ms ease-in-out;
-            :hover {
-                padding-right: 0.5rem;
-                border-right: 0.5rem solid #00ff99;
-              }
-        }
+        &__1 {
+            @include thumb;
+            animation-delay: 0.5s;
+          }
+
+          &__2 {
+            @include thumb;
+            animation-delay: 1s;
+          }
+
+          &__3 {
+            @include thumb;
+            animation-delay: 1.5s;
+          }
     }
 }
 

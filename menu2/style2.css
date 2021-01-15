@@ -1,0 +1,39 @@
+.plat {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  cursor: pointer; }
+  .plat__1 {
+    flex-grow: 1;
+    width: 40px;
+    background: orange; }
+    .plat__1 p,
+    .plat__1 h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .plat .prix {
+    width: 30px;
+    background: orange;
+    margin: 0;
+    padding-top: 42px; }
+  .plat .box {
+    display: flex;
+    width: 0;
+    transition: all 1s;
+    background-color: #99E2D0; }
+    .plat .box__check {
+      margin: auto;
+      color: white;
+      border-radius: 50%;
+      background-color: #99E2D0;
+      transition: transform 1s;
+      transform: rotate(180deg);
+      font-size: 40px; }
+  .plat:hover > .box {
+    width: 80px; }
+    .plat:hover > .box .box__check {
+      transform: rotate(0deg); }
+
+/*# sourceMappingURL=style2.css.map */

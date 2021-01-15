@@ -281,10 +281,12 @@ header {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .restau__palette .lock:hover #unlock1 {
-      animation: rempl 2s ease-in-out 0.5s;
-      animation-fill-mode: forwards;
+      animation: rempl 2s ease-in-out 0s forwards;
       transform-origin: center;
       display: inline; }
+    .restau__palette:hover {
+      opacity: 0.5;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.938); }
   .restau__note {
     margin-left: 20px;
     margin-right: 20px;
@@ -317,10 +319,12 @@ header {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .restau__note .lock:hover #unlock1 {
-      animation: rempl 2s ease-in-out 0.5s;
-      animation-fill-mode: forwards;
+      animation: rempl 2s ease-in-out 0s forwards;
       transform-origin: center;
       display: inline; }
+    .restau__note:hover {
+      opacity: 0.5;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.938); }
     .restau__note img {
       object-position: 50% 60%; }
   .restau__fr {
@@ -355,10 +359,12 @@ header {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .restau__fr .lock:hover #unlock1 {
-      animation: rempl 2s ease-in-out 0.5s;
-      animation-fill-mode: forwards;
+      animation: rempl 2s ease-in-out 0s forwards;
       transform-origin: center;
       display: inline; }
+    .restau__fr:hover {
+      opacity: 0.5;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.938); }
   .restau__delice {
     margin-left: 20px;
     margin-right: 20px;
@@ -391,10 +397,12 @@ header {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .restau__delice .lock:hover #unlock1 {
-      animation: rempl 2s ease-in-out 0.5s;
-      animation-fill-mode: forwards;
+      animation: rempl 2s ease-in-out 0s forwards;
       transform-origin: center;
       display: inline; }
+    .restau__delice:hover {
+      opacity: 0.5;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.938); }
 
 .foot {
   background-color: rgba(0, 0, 0, 0.788);

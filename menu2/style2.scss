@@ -1,0 +1,54 @@
+
+.plat {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+   &__1 {
+    flex-grow: 1;
+    width: 40px;
+    background: orange;
+   
+    p,
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .prix {
+    width: 30px;
+    background:orange;
+    margin: 0;
+    padding-top: 42px;
+  }
+  .box {
+    display: flex;
+    width: 0;
+    transition: all 1s;
+    background-color: #99E2D0;
+   
+    &__check {
+      margin: auto;
+      color: white;
+      border-radius: 50%;
+      background-color: #99E2D0;
+      transition: transform 1s;
+      transform: rotate(180deg);
+    font-size: 40px;
+    }
+  }
+    &:hover > .box {
+      width: 80px;
+      .box__check {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  
+   
+  
+  
+ 
+  

@@ -76,11 +76,14 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         }
-        .lock:hover #unlock1 {   
-        animation: rempl 2s ease-in-out 0.5s;
-        animation-fill-mode:forwards ;
+        .lock:hover #unlock1 {
+        animation: rempl 2s ease-in-out 0s forwards;
         transform-origin: center;
-            display: inline;
+        display: inline;
+        }
+        &:hover{
+            opacity: 0.5;
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.938);
         }
 }
 
@@ -107,4 +110,65 @@
   i{
       padding-right: 10px;
   }
+}
+
+@mixin thumb {
+    display: flex;
+            margin-top: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 20px;
+            opacity: 0;
+            animation: opac 2s ease-in-out forwards;
+           &__txt {
+               padding-top: 4px;
+            flex-grow: 1;
+            width: 40px;
+            background: white;
+            padding-left: 5px;
+           
+            p,
+            h4 {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              margin: 8px;
+            }
+            h4{
+                font-family: "font-bold";
+                
+            }
+          }
+          .prix {
+            width: 30px;
+            background:white;
+            margin: 0;
+            padding-right: 10px;
+            padding-top: 22px;
+            padding-bottom: 0;
+            font-family: "font-bold";
+          }
+          .box {
+            display: flex;
+            width: 0;
+            transition: all 1s;
+            background-color: #99E2D0;
+           
+            &__check {
+              margin: auto;
+              color: white;
+              border-radius: 50%;
+              font-size: 25px;
+              background-color: #99E2D0;
+              transition: transform 1s;
+              transform: rotate(180deg);
+            }
+          }
+            &:hover > .box {
+              width: 80px;
+              .box__check {
+                transform: rotate(0deg);
+              }
+            }
+    
 }
