@@ -30,8 +30,28 @@
             margin-bottom: 50px;
         }
     }
-    .palette__titre{
-        color: red;
+    .palette{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        border: 1px solid blue;
+    &__titre{
+        width: 100%;
+        p{
+            width: 100%;
+            }
+        }
+     &__entree{
+         width: 345px;
+        padding-top: 30px;
+     }
+     &__plat{
+        width: 345px;
+    }
+    &__dessert{
+        width: 345px;
+    }   
     }
     .pic{
         height: 500px;
