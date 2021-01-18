@@ -1,54 +1,108 @@
+@import "../variables";
+@import "../mixin-index.scss";
+@import "../media";
 
-.plat {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    cursor: pointer;
-   &__1 {
-    flex-grow: 1;
-    width: 40px;
-    background: orange;
-   
-    p,
-    h3 {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+@keyframes rempl{
+        0% {
+            transform: scale(0.3);
+           
+        }
+        100% {
+            transform: scale(1);
+            
+        }
     }
-  }
-  .prix {
-    width: 30px;
-    background:orange;
-    margin: 0;
-    padding-top: 42px;
-  }
-  .box {
-    display: flex;
-    width: 0;
-    transition: all 1s;
-    background-color: #99E2D0;
-   
-    &__check {
-      margin: auto;
-      color: white;
-      border-radius: 50%;
-      background-color: #99E2D0;
-      transition: transform 1s;
-      transform: rotate(180deg);
-    font-size: 40px;
+@keyframes opac{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
     }
-  }
-    &:hover > .box {
-      width: 80px;
-      .box__check {
-        transform: rotate(0deg);
-      }
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-   
-  
-  
- 
-  
+}
+
+@include headermenu;
+
+.menu{
+    z-index: 2;
+    position: relative;
+    margin-top: -30px;
+    border-radius: 30px 30px 0 0;
+    background-color: #F2F2F2;
+    &__title{
+        @include titlemenu;
+    }
+    
+    
+    &__starter{
+        margin: 0 20px 0 20px;
+        &__title{
+            @include titlemaj;
+        }
+        &__1 {
+            @include thumb;
+            animation-delay: 0.5s;
+          }
+
+          &__2 {
+            @include thumb;
+            animation-delay: 1s;
+          }
+
+          &__3 {
+            @include thumb;
+            animation-delay: 1.5s;
+          }
+          &__4 {
+            @include thumb;
+            animation-delay: 2s;
+          }
+    }
+    &__dish{
+        margin: 30px 20px 0 20px;
+        &__title{
+            @include titlemaj;
+        }
+        &__1 {
+            @include thumb;
+            animation-delay: 0.5s;
+          }
+
+          &__2 {
+            @include thumb;
+            animation-delay: 1s;
+          }
+
+          &__3 {
+            @include thumb;
+            animation-delay: 1.5s;
+          }
+    }
+    &__dessert{
+        margin: 30px 20px 0px 20px;
+        padding-bottom: 20px;
+        &__title{
+           @include titlemaj;
+        }
+        &__1 {
+            @include thumb;
+            animation-delay: 0.5s;
+          }
+
+          &__2 {
+            @include thumb;
+            animation-delay: 1s;
+          }
+
+          &__3 {
+            @include thumb;
+            animation-delay: 1.5s;
+          }
+    }
+}
+
+.foot{
+  @include foot
+}

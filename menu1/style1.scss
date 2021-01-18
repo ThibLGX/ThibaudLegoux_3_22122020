@@ -2,6 +2,16 @@
 @import "../mixin-index.scss";
 @import "../media";
 
+@keyframes rempl{
+        0% {
+            transform: scale(0.3);
+           
+        }
+        100% {
+            transform: scale(1);
+            
+        }
+    }
 @keyframes opac{
     from{
         opacity: 0;
@@ -13,88 +23,23 @@
     }
 }
 
-body{
-    font-family: "font-light";
-    margin: 0;
-    padding: 0;
-    }
+@include headermenu;
 
-header{
-    font-family: "font-title", Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    position: relative;
-    i{
-        color: $grey-dark;
-        font-size: 25px;
-        position: absolute;
-        left: 15px;
-        top: 15px;
-    }
-}
-.pic{
-    z-index: 1;
-    img{
-    width: 100%;
-    object-fit: cover;
-    }
-}
-.palette{
+.menu{
     z-index: 2;
     position: relative;
     margin-top: -30px;
     border-radius: 30px 30px 0 0;
     background-color: #F2F2F2;
-    &__titre{
-        border: 1px solid transparent;
-        font-family: "font-title", Arial, Helvetica, sans-serif;
-        font-size: 28px;
-        padding-left: 20px;
-
-        .lock{
-            text-decoration: none;
-            color: black;
-            position: relative;
-            padding-left: 30px;
-            i{
-                position: absolute;
-                top: 5px;
-                left: 37px;
-            }
-        }
-        .lock:hover #lock1,
-        .lock #unlock1 {
-        display: none;
-        background: -webkit-gradient(linear, left top, left bottom, from($primaire), to($secondaire));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        }
-        .lock:hover #unlock1 {
-        animation: rempl 2s ease-in-out 0s forwards;
-        transform-origin: center;
-        display: inline;
-        }
-    }
-    @keyframes rempl{
-        0% {
-            transform: scale(0.3);
-           
-        }
-        100% {
-            transform: scale(1);
-            
-        }
+    &__title{
+        @include titlemenu;
     }
     
-    &__entree{
+    
+    &__starter{
         margin: 0 20px 0 20px;
-        &__titre{
-            font-family: "font-thin";
-            border-bottom: 2px solid $tertiaire;
-            padding-bottom: 5px;
-            width: 50px;
+        &__title{
+            @include titlemaj;
         }
         &__1 {
             @include thumb;
@@ -111,13 +56,10 @@ header{
             animation-delay: 1.5s;
           }
     }
-    &__plat{
+    &__dish{
         margin: 30px 20px 0 20px;
-        &__titre{
-            font-family: "font-thin";
-            border-bottom: 2px solid $tertiaire;
-            padding-bottom: 5px;
-            width: 50px;
+        &__title{
+            @include titlemaj;
         }
         &__1 {
             @include thumb;
@@ -137,11 +79,8 @@ header{
     &__dessert{
         margin: 30px 20px 0px 20px;
         padding-bottom: 20px;
-        &__titre{
-            font-family: "font-thin";
-            border-bottom: 2px solid $tertiaire;
-            padding-bottom: 5px;
-            width: 50px;
+        &__title{
+           @include titlemaj;
         }
         &__1 {
             @include thumb;
@@ -160,23 +99,6 @@ header{
     }
 }
 
-.thing {
-    padding: 1rem;
-    width: 80%;
-    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
-      0 5px 15px 0 rgba(0,0,0,0.08);
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    border-right: 0 solid #00ff99;
-    transition: border-right 300ms ease-in-out, padding-right 300ms ease-in-out;
-  }
-  
-  .thing:hover {
-    padding-right: 0.5rem;
-    border-right: 0.5rem solid #00ff99;
-  }
-  
-  
 .foot{
   @include foot
 }
