@@ -103,6 +103,10 @@
     }
 }
 
+.order{
+  @include order
+}
+
 .foot{
   @include foot
 }

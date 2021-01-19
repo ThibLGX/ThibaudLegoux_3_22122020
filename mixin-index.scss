@@ -126,6 +126,25 @@
     }
 }
 
+@mixin order{
+    display: flex;
+  justify-content: center;
+  background-color: #F2F2F2;;
+    &__btn{
+      margin-top: 15px;
+      margin-bottom: 50px;
+      border: 0;
+      border-radius: 30px;
+      padding: 15px 50px 15px 50px;
+      background: linear-gradient(to bottom right,$secondaire, $primaire);
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+      color: white;
+  }
+  button:hover{
+    @include hoverbut;
+}
+}
+
 @mixin foot {
     background-color: $grey-dark;
     color: $color-font-footer;
