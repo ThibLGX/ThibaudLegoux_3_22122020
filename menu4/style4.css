@@ -13,6 +13,21 @@
 @font-face {
   font-family: "font-thin";
   src: url("polices/Roboto/Roboto-Thin.ttf"); }
+@font-face {
+  font-family: "mfont-title";
+  src: url("../polices/Shrikhand/Shrikhand-Regular.ttf"); }
+@font-face {
+  font-family: "mfont-text";
+  src: url("../polices/Roboto/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "mfont-bold";
+  src: url("../polices/Roboto/Roboto-Bold.ttf"); }
+@font-face {
+  font-family: "mfont-light";
+  src: url("../polices/Roboto/Roboto-Light.ttf"); }
+@font-face {
+  font-family: "mfont-thin";
+  src: url("../polices/Roboto/Roboto-Thin.ttf"); }
 @keyframes rempl {
   0% {
     transform: scale(0.3); }
@@ -93,12 +108,12 @@
     opacity: 1;
     transform: translateY(0); } }
 body {
-  font-family: "font-light";
+  font-family: "mfont-light";
   margin: 0;
   padding: 0; }
 
 header {
-  font-family: "font-title", Arial, Helvetica, sans-serif;
+  font-family: "mfont-title", Arial, Helvetica, sans-serif;
   font-size: 30px;
   text-align: center;
   padding-top: 8px;
@@ -127,7 +142,7 @@ header {
   background-color: #F2F2F2; }
   .menu__title {
     border: 1px solid transparent;
-    font-family: "font-title", Arial, Helvetica, sans-serif;
+    font-family: "mfont-title", Arial, Helvetica, sans-serif;
     font-size: 28px;
     padding-left: 20px; }
     .menu__title .lock {
@@ -152,7 +167,7 @@ header {
   .menu__starter {
     margin: 0 20px 0 20px; }
     .menu__starter__title {
-      font-family: "font-thin";
+      font-family: "mfont-thin";
       border-bottom: 2px solid #99E2D0;
       padding-bottom: 5px;
       width: 50px; }
@@ -178,7 +193,7 @@ header {
           white-space: nowrap;
           margin: 8px; }
         .menu__starter__1__txt h4 {
-          font-family: "font-bold"; }
+          font-family: "mfont-bold"; }
       .menu__starter__1 .price {
         width: 30px;
         background: white;
@@ -186,7 +201,7 @@ header {
         padding-right: 10px;
         padding-top: 22px;
         padding-bottom: 0;
-        font-family: "font-bold"; }
+        font-family: "mfont-bold"; }
       .menu__starter__1 .box {
         display: flex;
         width: 0;
@@ -226,7 +241,7 @@ header {
           white-space: nowrap;
           margin: 8px; }
         .menu__starter__2__txt h4 {
-          font-family: "font-bold"; }
+          font-family: "mfont-bold"; }
       .menu__starter__2 .price {
         width: 30px;
         background: white;
@@ -234,7 +249,7 @@ header {
         padding-right: 10px;
         padding-top: 22px;
         padding-bottom: 0;
-        font-family: "font-bold"; }
+        font-family: "mfont-bold"; }
       .menu__starter__2 .box {
         display: flex;
         width: 0;
@@ -274,7 +289,7 @@ header {
           white-space: nowrap;
           margin: 8px; }
         .menu__starter__3__txt h4 {
-          font-family: "font-bold"; }
+          font-family: "mfont-bold"; }
       .menu__starter__3 .price {
         width: 30px;
         background: white;
@@ -282,7 +297,7 @@ header {
         padding-right: 10px;
         padding-top: 22px;
         padding-bottom: 0;
-        font-family: "font-bold"; }
+        font-family: "mfont-bold"; }
       .menu__starter__3 .box {
         display: flex;
         width: 0;
@@ -303,7 +318,7 @@ header {
   .menu__dish {
     margin: 30px 20px 0 20px; }
     .menu__dish__title {
-      font-family: "font-thin";
+      font-family: "mfont-thin";
       border-bottom: 2px solid #99E2D0;
       padding-bottom: 5px;
       width: 50px; }
@@ -329,7 +344,7 @@ header {
           white-space: nowrap;
           margin: 8px; }
         .menu__dish__1__txt h4 {
-          font-family: "font-bold"; }
+          font-family: "mfont-bold"; }
       .menu__dish__1 .price {
         width: 30px;
         background: white;
@@ -337,7 +352,7 @@ header {
         padding-right: 10px;
         padding-top: 22px;
         padding-bottom: 0;
-        font-family: "font-bold"; }
+        font-family: "mfont-bold"; }
       .menu__dish__1 .box {
         display: flex;
         width: 0;
@@ -377,7 +392,7 @@ header {
           white-space: nowrap;
           margin: 8px; }
         .menu__dish__2__txt h4 {
-          font-family: "font-bold"; }
+          font-family: "mfont-bold"; }
       .menu__dish__2 .price {
         width: 30px;
         background: white;
@@ -385,7 +400,7 @@ header {
         padding-right: 10px;
         padding-top: 22px;
         padding-bottom: 0;
-        font-family: "font-bold"; }
+        font-family: "mfont-bold"; }
       .menu__dish__2 .box {
         display: flex;
         width: 0;
@@ -425,7 +440,7 @@ header {
           white-space: nowrap;
           margin: 8px; }
         .menu__dish__3__txt h4 {
-          font-family: "font-bold"; }
+          font-family: "mfont-bold"; }
       .menu__dish__3 .price {
         width: 30px;
         background: white;
@@ -433,7 +448,7 @@ header {
         padding-right: 10px;
         padding-top: 22px;
         padding-bottom: 0;
-        font-family: "font-bold"; }
+        font-family: "mfont-bold"; }
       .menu__dish__3 .box {
         display: flex;
         width: 0;
@@ -455,7 +470,7 @@ header {
     margin: 30px 20px 0px 20px;
     padding-bottom: 20px; }
     .menu__dessert__title {
-      font-family: "font-thin";
+      font-family: "mfont-thin";
       border-bottom: 2px solid #99E2D0;
       padding-bottom: 5px;
       width: 50px; }
@@ -481,7 +496,7 @@ header {
           white-space: nowrap;
           margin: 8px; }
         .menu__dessert__1__txt h4 {
-          font-family: "font-bold"; }
+          font-family: "mfont-bold"; }
       .menu__dessert__1 .price {
         width: 30px;
         background: white;
@@ -489,7 +504,7 @@ header {
         padding-right: 10px;
         padding-top: 22px;
         padding-bottom: 0;
-        font-family: "font-bold"; }
+        font-family: "mfont-bold"; }
       .menu__dessert__1 .box {
         display: flex;
         width: 0;
@@ -529,7 +544,7 @@ header {
           white-space: nowrap;
           margin: 8px; }
         .menu__dessert__2__txt h4 {
-          font-family: "font-bold"; }
+          font-family: "mfont-bold"; }
       .menu__dessert__2 .price {
         width: 30px;
         background: white;
@@ -537,7 +552,7 @@ header {
         padding-right: 10px;
         padding-top: 22px;
         padding-bottom: 0;
-        font-family: "font-bold"; }
+        font-family: "mfont-bold"; }
       .menu__dessert__2 .box {
         display: flex;
         width: 0;
@@ -577,7 +592,7 @@ header {
           white-space: nowrap;
           margin: 8px; }
         .menu__dessert__3__txt h4 {
-          font-family: "font-bold"; }
+          font-family: "mfont-bold"; }
       .menu__dessert__3 .price {
         width: 30px;
         background: white;
@@ -585,7 +600,7 @@ header {
         padding-right: 10px;
         padding-top: 22px;
         padding-bottom: 0;
-        font-family: "font-bold"; }
+        font-family: "mfont-bold"; }
       .menu__dessert__3 .box {
         display: flex;
         width: 0;
@@ -626,7 +641,7 @@ header {
   color: white;
   padding: 10px 20px 20px 25px; }
   .foot__titre {
-    font-family: "font-title";
+    font-family: "mfont-title";
     font-size: 18px; }
   .foot__parag {
     line-height: 28px; }

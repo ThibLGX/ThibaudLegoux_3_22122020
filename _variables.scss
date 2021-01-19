@@ -26,3 +26,24 @@ $grey-light:rgba(241, 240, 240, 0.719);
     font-family: "font-thin";
     src: url("polices/Roboto/Roboto-Thin.ttf");
 }
+
+@font-face{
+    font-family: "mfont-title";
+    src: url("../polices/Shrikhand/Shrikhand-Regular.ttf");
+}
+@font-face{
+    font-family: "mfont-text";
+    src: url("../polices/Roboto/Roboto-Regular.ttf");
+}
+@font-face{
+    font-family: "mfont-bold";
+    src: url("../polices/Roboto/Roboto-Bold.ttf");
+}
+@font-face{
+    font-family: "mfont-light";
+    src: url("../polices/Roboto/Roboto-Light.ttf");
+}
+@font-face{
+    font-family: "mfont-thin";
+    src: url("../polices/Roboto/Roboto-Thin.ttf");
+}

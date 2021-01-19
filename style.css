@@ -13,6 +13,21 @@
 @font-face {
   font-family: "font-thin";
   src: url("polices/Roboto/Roboto-Thin.ttf"); }
+@font-face {
+  font-family: "mfont-title";
+  src: url("../polices/Shrikhand/Shrikhand-Regular.ttf"); }
+@font-face {
+  font-family: "mfont-text";
+  src: url("../polices/Roboto/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "mfont-bold";
+  src: url("../polices/Roboto/Roboto-Bold.ttf"); }
+@font-face {
+  font-family: "mfont-light";
+  src: url("../polices/Roboto/Roboto-Light.ttf"); }
+@font-face {
+  font-family: "mfont-thin";
+  src: url("../polices/Roboto/Roboto-Thin.ttf"); }
 @media only screen and (min-device-width: 768px) {
   body header {
     font-size: 40px;
@@ -447,7 +462,7 @@ header {
   color: white;
   padding: 10px 20px 20px 25px; }
   .foot__titre {
-    font-family: "font-title";
+    font-family: "mfont-title";
     font-size: 18px; }
   .foot__parag {
     line-height: 28px; }
