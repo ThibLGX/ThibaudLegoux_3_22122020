@@ -1,18 +1,18 @@
 @font-face {
   font-family: "font-title";
-  src: url("/polices/Shrikhand/Shrikhand-Regular.ttf"); }
+  src: url("polices/Shrikhand/Shrikhand-Regular.ttf"); }
 @font-face {
   font-family: "font-text";
-  src: url("/polices/Roboto/Roboto-Regular.ttf"); }
+  src: url("polices/Roboto/Roboto-Regular.ttf"); }
 @font-face {
   font-family: "font-bold";
-  src: url("/polices/Roboto/Roboto-Bold.ttf"); }
+  src: url("polices/Roboto/Roboto-Bold.ttf"); }
 @font-face {
   font-family: "font-light";
-  src: url("/polices/Roboto/Roboto-Light.ttf"); }
+  src: url("polices/Roboto/Roboto-Light.ttf"); }
 @font-face {
   font-family: "font-thin";
-  src: url("/polices/Roboto/Roboto-Thin.ttf"); }
+  src: url("polices/Roboto/Roboto-Thin.ttf"); }
 @media only screen and (min-device-width: 768px) {
   body header {
     font-size: 40px;
