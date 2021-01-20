@@ -20,13 +20,13 @@
     <header>ohmyfood</header>
 
     <section class="search">
-        <div class="search__lieu">
-            <label for="lieu" class="search__lieu__label"><i class="fas fa-map-marker-alt"></i></label>
-            <input type="text" class="search__lieu__input" placeholder="Paris, Belleville" name="lieu" required>
+        <div class="search__location">
+            <label for="location" class="search__location__label"><i class="fas fa-map-marker-alt"></i></label>
+            <input type="text" class="search__location__input" placeholder="Paris, Belleville" name="location" required>
         </div>
 
         <div class="search__reserv">
-            <p class="search__reserv__titre">Réservez le menu qui vous convient
+            <p class="search__reserv__title">Réservez le menu qui vous convient
             </p>
             <p class="search__reserv__descript">Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
             <button class="search__reserv__btn">Explorer nos restaurants</button>
@@ -34,23 +34,23 @@
     </section>
 
     <!-- ############################   FONCTION      ############################ -->
-    <section class="fonctionnement">
+    <section class="operation">
 
-        <p class="fonctionnement__titre">Fonctionnement</p>
+        <p class="operation__title">Fonctionnement</p>
 
-        <article class="fonctionnement__choix">
-            <div class="case1"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
-            <aside class="num1">1</aside>
+        <article class="operation__choix">
+            <div class="case"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
+            <aside class="num">1</aside>
         </article>
 
-        <article class="fonctionnement__compo">
-            <div class="case2"><i class="fas fa-list-ul"></i>Composez votre menu</div>
-            <aside class="num2">2</aside>
+        <article class="operation__compo">
+            <div class="case"><i class="fas fa-list-ul"></i>Composez votre menu</div>
+            <aside class="num">2</aside>
         </article>
 
-        <article class="fonctionnement__degust">
-            <div class="case3"><i class="fas fa-store"></i>Dégustez au restaurant</div>
-            <aside class="num3">3</aside>
+        <article class="operation__degust">
+            <div class="caseColor"><i class="fas fa-store"></i>Dégustez au restaurant</div>
+            <aside class="numColor">3</aside>
         </article>
     </section>
 
@@ -58,57 +58,58 @@
     <!-- ############################    RESTAURANTS      ############################ -->
 
     <section id="restaurant" class="restau">
-        <p class="restau__titre">Restaurants</p>
+        <p class="restau__title">Restaurants</p>
+        <div class="restau__wrap">
+            <a href="menuPalette/LaPaletteDuGout.html">
+                <article class="restau__palette">
+                    <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay">
+                    <p class="gras">La palette du goût</p>
+                    <p class="thin">Ménilmontant</p>
+                    <a href="#" class="lock">
+                        <i id="lock" class="far fa-heart"></i>
+                        <i id="unlock" class="fas fa-heart"></i></a>
+                </article>
+            </a>
 
-        <a href="menu1/index1.html">
-            <article class="restau__palette">
-                <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay">
-                <p class="gras">La palette du goût</p>
-                <p class="thin">Ménilmontant</p>
-                <a href="#" class="lock">
-                    <i id="lock1" class="far fa-heart"></i>
-                    <i id="unlock1" class="fas fa-heart"></i></a>
-            </article>
-        </a>
+            <a href="menuNote/LaNoteEnchantee.html">
+                <article class="restau__note">
+                    <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="stil">
+                    <p class="gras">La note enchantée</p>
+                    <p class="thin">Charonne</p>
+                    <a href="#" class="lock">
+                        <i id="lock" class="far fa-heart"></i>
+                        <i id="unlock" class="fas fa-heart"></i></a>
+                </article>
+            </a>
 
-        <a href="menu2/index2.html">
-            <article class="restau__note">
-                <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="stil">
-                <p class="gras">La note enchantée</p>
-                <p class="thin">Charonne</p>
-                <a href="#" class="lock">
-                    <i id="lock1" class="far fa-heart"></i>
-                    <i id="unlock1" class="fas fa-heart"></i></a>
-            </article>
-        </a>
+            <a href="menuFr/ALaFrancaise.html">
+                <article class="restau__fr">
+                    <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa">
+                    <p class="gras">À la française</p>
+                    <p class="thin">Cité rouge</p>
+                    <a href="#" class="lock">
+                        <i id="lock" class="far fa-heart"></i>
+                        <i id="unlock" class="fas fa-heart"></i></a>
+                </article>
+            </a>
 
-        <a href="menu3/index3.html">
-            <article class="restau__fr">
-                <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa">
-                <p class="gras">À la française</p>
-                <p class="thin">Cité rouge</p>
-                <a href="#" class="lock">
-                    <i id="lock1" class="far fa-heart"></i>
-                    <i id="unlock1" class="fas fa-heart"></i></a>
-            </article>
-        </a>
-
-        <a href="menu4/index4.html">
-            <article class="restau__delice">
-                <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis">
-                <p class="gras">Le délice des sens</p>
-                <p class="thin">Folie-micourt</p>
-                <a href="#" class="lock">
-                    <i id="lock1" class="far fa-heart"></i>
-                    <i id="unlock1" class="fas fa-heart"></i></a>
-            </article>
-        </a>
+            <a href="menuDelice/LeDeliceDesSens.html">
+                <article class="restau__delice">
+                    <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis">
+                    <p class="gras">Le délice des sens</p>
+                    <p class="thin">Folie-micourt</p>
+                    <a href="#" class="lock">
+                        <i id="lock" class="far fa-heart"></i>
+                        <i id="unlock" class="fas fa-heart"></i></a>
+                </article>
+            </a>
+        </div>
     </section>
 
 
     <!-- ############################   FOOTER      ############################ -->
     <footer class="foot">
-        <p class="foot__titre">ohmyfood</p>
+        <p class="foot__title">ohmyfood</p>
         <p class="foot__parag"><i class="fas fa-utensils"></i>Proposer un repas <br>
             <i class="fas fa-hands-helping"></i>Devenir partenaire <br>
             Mentions légales <br>

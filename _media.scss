@@ -1,15 +1,15 @@
-@media only screen and (min-device-width : 768px)
+@media only screen and (min-width : 768px)
 {
     body header{
         font-size: 40px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .fonctionnement{
+    .operation{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        &__titre{
+        &__title{
             width: 100%;
             margin-top: 0px;
             padding-bottom: 20px;
@@ -19,15 +19,20 @@
         }
     }
     .restau{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        &__titre{
-            width: 100%;
+        &__wrap{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+        &__title{
+            width: 90%;
         }
         article{
             width: 340px;
+            margin: 40px;
             margin-bottom: 50px;
+
         }
     }
     .menu{
@@ -52,28 +57,28 @@
         width: 345px;
     }   
     }
-    .pic{
+    .banner{
         height: 500px;
         img{
             width: 100%;
             height: 100%;
             object-position: 50% 50%;
         }
-        &__m2{
+        &__menuNote{
             img{
                 width: 100%;
                 height: 100%;
                 object-position: 50% 55%;
             }
         }
-        &__m3{
+        &__menuFr{
             img{
                 width: 100%;
                 height: 100%;
                 object-position: 50% 70%;
             }
         }
-        &__m4{
+        &__menuDelice{
             img{
                 width: 100%;
                 height: 100%;

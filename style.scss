@@ -58,7 +58,7 @@ header{
 }
 .search{
     
-    &__lieu{
+    &__location{
         background-color: rgb(238, 238, 238);
         text-align: center;
         padding-top: 15px;
@@ -91,7 +91,7 @@ header{
         padding-bottom: 40px;
         text-align: center;
         background-color: $grey-light;
-        &__titre{
+        &__title{
             font-family: "font-bold";
             font-size: 24px;
             padding: 0px 70px 0 70px;
@@ -120,17 +120,17 @@ header{
     }
 }
 
-.fonctionnement{
+.operation{
     padding-bottom: 20px;
-    &__titre{
-        @include titre-home;
+    &__title{
+        @include title-home;
     }
     &__choix{
         position: relative;
-        .case1{
+        .case{
           @include case;
         }
-        .num1{
+        .num{
             @include num;
         }
        div:hover{
@@ -139,10 +139,10 @@ header{
     }
     &__compo{
         position: relative;
-        .case2{
+        .case{
         @include case;
         }
-        .num2{
+        .num{
             @include num;
         }
         div:hover{
@@ -151,14 +151,14 @@ header{
     }
     &__degust{
         position: relative;
-        .case3{
+        .caseColor{
             @include case;
             background-color: $primaire-opacity2;
             i{
                 color: $primaire;
             }
         }
-        .num3{
+        .numColor{
             @include num;
         }
         div:hover{
@@ -174,8 +174,8 @@ header{
         text-decoration: none;
         color: black
     }
-    &__titre{
-        @include titre-home;
+    &__title{
+        @include title-home;
     }
     &__palette{
         @include vignette;

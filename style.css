@@ -28,32 +28,34 @@
 @font-face {
   font-family: "mfont-thin";
   src: url("../polices/Roboto/Roboto-Thin.ttf"); }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   body header {
     font-size: 40px;
     margin-top: 10px;
     margin-bottom: 10px; }
 
-  .fonctionnement {
+  .operation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
-    .fonctionnement__titre {
+    .operation__title {
       width: 100%;
       margin-top: 0px;
       padding-bottom: 20px; }
-    .fonctionnement div {
+    .operation div {
       width: 250px; }
 
-  .restau {
+  .restau__wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; }
-    .restau__titre {
-      width: 100%; }
-    .restau article {
-      width: 340px;
-      margin-bottom: 50px; }
+    flex-direction: row;
+    justify-content: center; }
+  .restau__title {
+    width: 90%; }
+  .restau article {
+    width: 340px;
+    margin: 40px;
+    margin-bottom: 50px; }
 
   .menu {
     display: flex;
@@ -72,29 +74,34 @@
     .menu__dessert {
       width: 345px; }
 
-  .pic {
+  .banner {
     height: 500px; }
-    .pic img {
+    .banner img {
       width: 100%;
       height: 100%;
       object-position: 50% 50%; }
-    .pic__m2 img {
+    .banner__menuNote img {
       width: 100%;
       height: 100%;
       object-position: 50% 55%; }
-    .pic__m3 img {
+    .banner__menuFr img {
       width: 100%;
       height: 100%;
       object-position: 50% 70%; }
-    .pic__m4 img {
+    .banner__menuDelice img {
       width: 100%;
       height: 100%;
       object-position: 50% 80%; } }
+/*  ANNIMATION DE REMPLISSAGE DU COEUR */
 @keyframes rempl {
   0% {
     transform: scale(0.3); }
   100% {
     transform: scale(1); } }
+/* SURVOL DES BOUTONS */
+/* MIXINS DE LA PAGE D'ACCUEIL */
+/* MIXINS DES MENUS */
+/* MIXIN DU FOOTER */
 .loader {
   width: 100%;
   height: 100%;
@@ -141,16 +148,16 @@ header {
   padding-top: 8px;
   padding-bottom: 8px; }
 
-.search__lieu {
+.search__location {
   background-color: #eeeeee;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
   box-shadow: inset 0 3px 5px #c5c5c5; }
-  .search__lieu__label {
+  .search__location__label {
     color: rgba(0, 0, 0, 0.788);
     margin-right: -5px; }
-  .search__lieu__input {
+  .search__location__input {
     font-family: "font-bold";
     font-weight: lighter;
     font-size: 95%;
@@ -160,7 +167,7 @@ header {
     background: transparent;
     text-align: center;
     width: 150px; }
-    .search__lieu__input::placeholder {
+    .search__location__input::placeholder {
       padding-left: 15px;
       text-align: start;
       width: 50px;
@@ -170,7 +177,7 @@ header {
   padding-bottom: 40px;
   text-align: center;
   background-color: rgba(241, 240, 240, 0.719); }
-  .search__reserv__titre {
+  .search__reserv__title {
     font-family: "font-bold";
     font-size: 24px;
     padding: 0px 70px 0 70px; }
@@ -193,16 +200,16 @@ header {
     opacity: 0.8;
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
 
-.fonctionnement {
+.operation {
   padding-bottom: 20px; }
-  .fonctionnement__titre {
+  .operation__title {
     font-family: "font-bold";
     font-size: 22px;
     padding-top: 40px;
     padding-left: 20px; }
-  .fonctionnement__choix {
+  .operation__choix {
     position: relative; }
-    .fonctionnement__choix .case1 {
+    .operation__choix .case {
       background-color: rgba(241, 240, 240, 0.719);
       border-radius: 25px;
       box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
@@ -211,11 +218,11 @@ header {
       margin-left: 25px;
       margin-right: 15px;
       margin-bottom: 25px; }
-      .fonctionnement__choix .case1 i {
+      .operation__choix .case i {
         color: rgba(0, 0, 0, 0.705);
         padding-right: 25px;
         font-size: 20px; }
-    .fonctionnement__choix .num1 {
+    .operation__choix .num {
       color: white;
       font-size: 14px;
       text-align: center;
@@ -226,12 +233,12 @@ header {
       position: absolute;
       top: 25px;
       left: 14px; }
-    .fonctionnement__choix div:hover {
+    .operation__choix div:hover {
       opacity: 0.8;
       box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
-  .fonctionnement__compo {
+  .operation__compo {
     position: relative; }
-    .fonctionnement__compo .case2 {
+    .operation__compo .case {
       background-color: rgba(241, 240, 240, 0.719);
       border-radius: 25px;
       box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
@@ -240,11 +247,11 @@ header {
       margin-left: 25px;
       margin-right: 15px;
       margin-bottom: 25px; }
-      .fonctionnement__compo .case2 i {
+      .operation__compo .case i {
         color: rgba(0, 0, 0, 0.705);
         padding-right: 25px;
         font-size: 20px; }
-    .fonctionnement__compo .num2 {
+    .operation__compo .num {
       color: white;
       font-size: 14px;
       text-align: center;
@@ -255,12 +262,12 @@ header {
       position: absolute;
       top: 25px;
       left: 14px; }
-    .fonctionnement__compo div:hover {
+    .operation__compo div:hover {
       opacity: 0.8;
       box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
-  .fonctionnement__degust {
+  .operation__degust {
     position: relative; }
-    .fonctionnement__degust .case3 {
+    .operation__degust .caseColor {
       background-color: rgba(241, 240, 240, 0.719);
       border-radius: 25px;
       box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
@@ -270,13 +277,13 @@ header {
       margin-right: 15px;
       margin-bottom: 25px;
       background-color: rgba(147, 86, 220, 0.2); }
-      .fonctionnement__degust .case3 i {
+      .operation__degust .caseColor i {
         color: rgba(0, 0, 0, 0.705);
         padding-right: 25px;
         font-size: 20px; }
-      .fonctionnement__degust .case3 i {
+      .operation__degust .caseColor i {
         color: #9356DC; }
-    .fonctionnement__degust .num3 {
+    .operation__degust .numColor {
       color: white;
       font-size: 14px;
       text-align: center;
@@ -287,7 +294,7 @@ header {
       position: absolute;
       top: 25px;
       left: 14px; }
-    .fonctionnement__degust div:hover {
+    .operation__degust div:hover {
       opacity: 0.8;
       box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
 
@@ -297,7 +304,7 @@ header {
   .restau a {
     text-decoration: none;
     color: black; }
-  .restau__titre {
+  .restau__title {
     font-family: "font-bold";
     font-size: 22px;
     padding-top: 40px;
@@ -327,13 +334,13 @@ header {
       right: 30px;
       bottom: 20px;
       font-size: 25px; }
-    .restau__palette .lock:hover #lock1,
-    .restau__palette .lock #unlock1 {
+    .restau__palette .lock:hover #lock,
+    .restau__palette .lock #unlock {
       display: none;
       background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    .restau__palette .lock:hover #unlock1 {
+    .restau__palette .lock:hover #unlock {
       animation: rempl 2s ease-in-out 0s forwards;
       transform-origin: center;
       display: inline; }
@@ -365,13 +372,13 @@ header {
       right: 30px;
       bottom: 20px;
       font-size: 25px; }
-    .restau__note .lock:hover #lock1,
-    .restau__note .lock #unlock1 {
+    .restau__note .lock:hover #lock,
+    .restau__note .lock #unlock {
       display: none;
       background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    .restau__note .lock:hover #unlock1 {
+    .restau__note .lock:hover #unlock {
       animation: rempl 2s ease-in-out 0s forwards;
       transform-origin: center;
       display: inline; }
@@ -405,13 +412,13 @@ header {
       right: 30px;
       bottom: 20px;
       font-size: 25px; }
-    .restau__fr .lock:hover #lock1,
-    .restau__fr .lock #unlock1 {
+    .restau__fr .lock:hover #lock,
+    .restau__fr .lock #unlock {
       display: none;
       background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    .restau__fr .lock:hover #unlock1 {
+    .restau__fr .lock:hover #unlock {
       animation: rempl 2s ease-in-out 0s forwards;
       transform-origin: center;
       display: inline; }
@@ -443,13 +450,13 @@ header {
       right: 30px;
       bottom: 20px;
       font-size: 25px; }
-    .restau__delice .lock:hover #lock1,
-    .restau__delice .lock #unlock1 {
+    .restau__delice .lock:hover #lock,
+    .restau__delice .lock #unlock {
       display: none;
       background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    .restau__delice .lock:hover #unlock1 {
+    .restau__delice .lock:hover #unlock {
       animation: rempl 2s ease-in-out 0s forwards;
       transform-origin: center;
       display: inline; }
@@ -461,7 +468,7 @@ header {
   background-color: rgba(0, 0, 0, 0.788);
   color: white;
   padding: 10px 20px 20px 25px; }
-  .foot__titre {
+  .foot__title {
     font-family: "mfont-title";
     font-size: 18px; }
   .foot__parag {

@@ -1,3 +1,4 @@
+/*  ANNIMATION DE REMPLISSAGE DU COEUR */
 @keyframes rempl {
     0% {
         transform: scale(0.3);
@@ -7,6 +8,14 @@
     }
 }
 
+/* SURVOL DES BOUTONS */
+@mixin hoverbut {
+    opacity: 0.8;
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637);
+}
+
+
+/* MIXINS DE LA PAGE D'ACCUEIL */
 @mixin case {
             background-color: $grey-light;
             border-radius: 25px;
@@ -34,7 +43,7 @@
             top: 25px;
             left: 14px;
 }
-@mixin titre-home {
+@mixin title-home {
     font-family: "font-bold";
     font-size: 22px;
     padding-top: 40px;
@@ -69,14 +78,14 @@
             bottom: 20px;
             font-size: 25px;
         }
-        .lock:hover #lock1,
-        .lock #unlock1 {
+        .lock:hover #lock,
+        .lock #unlock {
         display: none;
         background: -webkit-gradient(linear, left top, left bottom, from($primaire), to($secondaire));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         }
-        .lock:hover #unlock1 {
+        .lock:hover #unlock {
         animation: rempl 2s ease-in-out 0s forwards;
         transform-origin: center;
         display: inline;
@@ -87,12 +96,8 @@
         }
 }
 
-@mixin hoverbut {
-    opacity: 0.8;
-            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637);
-}
-
-@mixin headermenu {
+/* MIXINS DES MENUS */
+@mixin headermenu { /* header et banner */
     body{
         font-family: "mfont-light";
         margin: 0;
@@ -114,7 +119,7 @@
             top: 15px;
         }
     }
-    .pic{
+    .banner{
         z-index: 1;
         img{
         width: 100%;
@@ -126,50 +131,11 @@
     }
 }
 
-@mixin order{
-    display: flex;
-  justify-content: center;
-  background-color: #F2F2F2;;
-    &__btn{
-      margin-top: 15px;
-      margin-bottom: 50px;
-      border: 0;
-      border-radius: 30px;
-      padding: 15px 50px 15px 50px;
-      background: linear-gradient(to bottom right,$secondaire, $primaire);
-      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
-      color: white;
-  }
-  button:hover{
-    @include hoverbut;
-}
-}
-
-@mixin foot {
-    background-color: $grey-dark;
-    color: $color-font-footer;
-    padding: 10px 20px 20px 25px;
-    &__titre{
-    font-family: "mfont-title";
-    font-size: 18px;
-  }
-  &__parag{
-      line-height: 28px;
-      a{
-        text-decoration: none;
-        color: white;
-        }
-  }
-  i{
-      padding-right: 10px;
-  }
-}
-
-@mixin titlemenu {
+@mixin titlemenu { /* titre du menu */
     
     border: 1px solid transparent;
     font-family: "mfont-title", Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     padding-left: 20px;
 
     .lock{
@@ -183,28 +149,28 @@
             left: 37px;
         }
     }
-    .lock:hover #lock1,
-    .lock #unlock1 {
+    .lock:hover #lock,
+    .lock #unlock {
     display: none;
     background: -webkit-gradient(linear, left top, left bottom, from($primaire), to($secondaire));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
-    .lock:hover #unlock1 {
+    .lock:hover #unlock {
     animation: rempl 2s ease-in-out 0s forwards;
     transform-origin: center;
     display: inline;
     }
 }
 
-@mixin titlemaj {
+@mixin titlemaj { /* entrees plats desserts */
     font-family: "mfont-thin";
             border-bottom: 2px solid $tertiaire;
             padding-bottom: 5px;
             width: 50px;
 }
 
-@mixin thumb {
+@mixin thumb { /* vignettes */
     display: flex;
             margin-top: 15px;
             overflow: hidden;
@@ -263,4 +229,43 @@
               }
             }
     
+}
+@mixin order{ /* bouton commander */
+    display: flex;
+  justify-content: center;
+  background-color: #F2F2F2;;
+    &__btn{
+      margin-top: 15px;
+      margin-bottom: 50px;
+      border: 0;
+      border-radius: 30px;
+      padding: 15px 50px 15px 50px;
+      background: linear-gradient(to bottom right,$secondaire, $primaire);
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+      color: white;
+  }
+  button:hover{
+    @include hoverbut;
+}
+}
+
+/* MIXIN DU FOOTER */
+@mixin foot {
+    background-color: $grey-dark;
+    color: $color-font-footer;
+    padding: 10px 20px 20px 25px;
+    &__title{
+    font-family: "mfont-title";
+    font-size: 18px;
+  }
+  &__parag{
+      line-height: 28px;
+      a{
+        text-decoration: none;
+        color: white;
+        }
+  }
+  i{
+      padding-right: 10px;
+  }
 }
