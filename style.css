@@ -478,5 +478,7 @@ header {
       color: white; }
   .foot i {
     padding-right: 10px; }
+  .foot__title {
+    font-family: "font-title"; }
 
 /*# sourceMappingURL=style.css.map */
