@@ -32,9 +32,8 @@
     border-radius: 30px 30px 0 0;
     background-color: #F2F2F2;
     &__title{
-        @include titlemenu;
+      @include titlemenu;
     }
-    
     
     &__starter{
         margin: 0 20px 0 20px;

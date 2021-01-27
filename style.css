@@ -1,91 +1,529 @@
-/*
-Error: Invalid CSS after "...      display: ": expected expression (e.g. 1px, bold), was ";"
-        on line 29 of mixin-index.scss
-        from line 3 of style.scss
+@font-face {
+  font-family: "font-title";
+  src: url("polices/Shrikhand/Shrikhand-Regular.ttf"); }
+@font-face {
+  font-family: "font-text";
+  src: url("polices/Roboto/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "font-bold";
+  src: url("polices/Roboto/Roboto-Bold.ttf"); }
+@font-face {
+  font-family: "font-light";
+  src: url("polices/Roboto/Roboto-Light.ttf"); }
+@font-face {
+  font-family: "font-thin";
+  src: url("polices/Roboto/Roboto-Thin.ttf"); }
+@font-face {
+  font-family: "mfont-title";
+  src: url("../polices/Shrikhand/Shrikhand-Regular.ttf"); }
+@font-face {
+  font-family: "mfont-text";
+  src: url("../polices/Roboto/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "mfont-bold";
+  src: url("../polices/Roboto/Roboto-Bold.ttf"); }
+@font-face {
+  font-family: "mfont-light";
+  src: url("../polices/Roboto/Roboto-Light.ttf"); }
+@font-face {
+  font-family: "mfont-thin";
+  src: url("../polices/Roboto/Roboto-Thin.ttf"); }
+@media only screen and (min-width: 768px) {
+  body header {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
-24:             padding: 25px 10px 25px 30px;
-25:             margin-left: 25px;
-26:             margin-right: 15px;
-27:             margin-bottom: 25px;
-28:             i{
-29:                 display: ;
-30:                 color: rgba(0, 0, 0, 0.705);
-31:                 padding-right: 25px;
-32:                 font-size: 20px;
-33:             }
-34: }
+  .operation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .operation__title {
+      width: 100%;
+      margin-top: 0px;
+      padding-bottom: 20px; }
+    .operation div {
+      width: 250px; }
 
-Backtrace:
-mixin-index.scss:29
-style.scss:3
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:855:in `assert_expr'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1164:in `sass_script'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1002:in `value!'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:807:in `block in try_declaration'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:246:in `mixin_directive'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...      display: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 29 of mixin-index.scss\A         from line 3 of style.scss\A \A 24:             padding: 25px 10px 25px 30px;\A 25:             margin-left: 25px;\A 26:             margin-right: 15px;\A 27:             margin-bottom: 25px;\A 28:             i{\A 29:                 display: ;\A 30:                 color: rgba(0, 0, 0, 0.705);\A 31:                 padding-right: 25px;\A 32:                 font-size: 20px;\A 33:             }\A 34: }"; }
+  .restau__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; }
+  .restau__title {
+    width: 90%; }
+  .restau article {
+    width: 340px;
+    margin: 40px;
+    margin-bottom: 50px; }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around; }
+    .menu__title {
+      width: 100%; }
+      .menu__title p {
+        width: 100%; }
+    .menu__starter {
+      width: 345px;
+      padding-top: 30px; }
+    .menu__dish {
+      width: 345px; }
+    .menu__dessert {
+      width: 345px; }
+
+  .banner {
+    height: 500px; }
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-position: 50% 50%; }
+    .banner__menuNote img {
+      width: 100%;
+      height: 100%;
+      object-position: 50% 55%; }
+    .banner__menuFr img {
+      width: 100%;
+      height: 100%;
+      object-position: 50% 70%; }
+    .banner__menuDelice img {
+      width: 100%;
+      height: 100%;
+      object-position: 50% 80%; } }
+/*  ANNIMATION DE REMPLISSAGE DU COEUR */
+@keyframes rempl {
+  0% {
+    transform: scale(0.3); }
+  100% {
+    transform: scale(1); } }
+/* SURVOL DES BOUTONS */
+/* MIXINS DE LA PAGE D'ACCUEIL */
+/* MIXINS DES MENUS */
+/* MIXIN DU FOOTER */
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  animation: backload 2.1s linear forwards;
+  display: flex;
+  justify-content: center;
+  padding-top: 20%; }
+  .loader__cercle {
+    border: 16px solid #9356DC;
+    border-top: 16px solid #FF79DA;
+    border-radius: 50%;
+    margin-top: 200px;
+    width: 120px;
+    height: 120px;
+    animation: loading 2s ease-in-out forwards; }
+
+@keyframes heart {
+  0% {
+    font-size: 0px; } }
+@keyframes backload {
+  0% {
+    z-index: 999; }
+  90% {
+    opacity: 0.8; }
+  99% {
+    opacity: 0;
+    transform: scale(2); }
+  100% {
+    z-index: 0;
+    transform: scale(0); } }
+@keyframes loading {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(1660deg); } }
+body {
+  font-family: "font-text";
+  margin: 0;
+  padding: 0; }
+
+header {
+  font-family: "font-title";
+  font-size: 30px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+.search__location {
+  background-color: #eeeeee;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: inset 0 3px 5px #c5c5c5; }
+  .search__location__label {
+    color: rgba(0, 0, 0, 0.788);
+    margin-right: -5px; }
+  .search__location__input {
+    font-family: "font-bold";
+    font-weight: lighter;
+    font-size: 95%;
+    border: 0;
+    outline: 0;
+    color: black;
+    background: transparent;
+    text-align: center;
+    width: 150px; }
+    .search__location__input::placeholder {
+      padding-left: 15px;
+      text-align: start;
+      width: 50px;
+      color: rgba(0, 0, 0, 0.788); }
+.search__reserv {
+  padding-top: 15px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: rgba(241, 240, 240, 0.719); }
+  .search__reserv__title {
+    font-family: "font-bold";
+    font-size: 24px;
+    padding: 0px 70px 0 70px; }
+  .search__reserv__descript {
+    font-size: 17px;
+    padding: 0 15px 0 15px;
+    font-family: "font-thin"; }
+  .search__reserv__btn {
+    margin-top: 15px;
+    border: 0;
+    border-radius: 30px;
+    padding: 15px 25px 15px 25px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+    color: white; }
+  .search__reserv a {
+    text-decoration: none;
+    color: white; }
+  .search__reserv button:hover {
+    opacity: 0.8;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
+
+.operation {
+  padding-bottom: 20px; }
+  .operation__title {
+    font-family: "font-bold";
+    font-size: 22px;
+    padding-top: 40px;
+    padding-left: 20px; }
+  .operation__choix {
+    position: relative; }
+    .operation__choix .case {
+      background-color: rgba(241, 240, 240, 0.719);
+      border-radius: 25px;
+      box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
+      font-weight: 800;
+      padding: 25px 10px 25px 30px;
+      margin-left: 25px;
+      margin-right: 15px;
+      margin-bottom: 25px; }
+      .operation__choix .case i {
+        color: rgba(0, 0, 0, 0.705);
+        padding-right: 25px;
+        font-size: 20px; }
+    .operation__choix .num {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      background-color: #9356DC;
+      padding: 3px;
+      width: 17px;
+      border-radius: 20px;
+      position: absolute;
+      top: 25px;
+      left: 14px; }
+    .operation__choix div:hover {
+      opacity: 0.8;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
+  .operation__compo {
+    position: relative; }
+    .operation__compo .case {
+      background-color: rgba(241, 240, 240, 0.719);
+      border-radius: 25px;
+      box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
+      font-weight: 800;
+      padding: 25px 10px 25px 30px;
+      margin-left: 25px;
+      margin-right: 15px;
+      margin-bottom: 25px; }
+      .operation__compo .case i {
+        color: rgba(0, 0, 0, 0.705);
+        padding-right: 25px;
+        font-size: 20px; }
+    .operation__compo .num {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      background-color: #9356DC;
+      padding: 3px;
+      width: 17px;
+      border-radius: 20px;
+      position: absolute;
+      top: 25px;
+      left: 14px; }
+    .operation__compo div:hover {
+      opacity: 0.8;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
+  .operation__degust {
+    position: relative; }
+    .operation__degust .caseColor {
+      background-color: rgba(241, 240, 240, 0.719);
+      border-radius: 25px;
+      box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.123);
+      font-weight: 800;
+      padding: 25px 10px 25px 30px;
+      margin-left: 25px;
+      margin-right: 15px;
+      margin-bottom: 25px;
+      background-color: rgba(147, 86, 220, 0.2); }
+      .operation__degust .caseColor i {
+        color: rgba(0, 0, 0, 0.705);
+        padding-right: 25px;
+        font-size: 20px; }
+      .operation__degust .caseColor i {
+        color: #9356DC; }
+    .operation__degust .numColor {
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      background-color: #9356DC;
+      padding: 3px;
+      width: 17px;
+      border-radius: 20px;
+      position: absolute;
+      top: 25px;
+      left: 14px; }
+    .operation__degust div:hover {
+      opacity: 0.8;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.637); }
+
+.restau {
+  background-color: rgba(241, 240, 240, 0.719);
+  padding-bottom: 35px; }
+  .restau a {
+    text-decoration: none;
+    color: black; }
+  .restau__title {
+    font-family: "font-bold";
+    font-size: 22px;
+    padding-top: 40px;
+    padding-left: 20px; }
+  .restau__palette {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+    position: relative; }
+    .restau__palette img {
+      width: 100%;
+      height: 200px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover;
+      object-position: 50% 80%; }
+    .restau__palette .gras {
+      font-family: "font-bold";
+      margin-left: 20px;
+      height: 28px;
+      margin-right: 30px;
+      display: flex;
+      justify-content: space-between; }
+    .restau__palette .thin {
+      font-family: "font-thin";
+      margin-left: 20px;
+      margin-top: -12px;
+      padding-bottom: 10px; }
+    .restau__palette:hover {
+      opacity: .6;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.658); }
+    .restau__palette #hpalette {
+      position: absolute;
+      left: -100vw; }
+    .restau__palette [for='hpalette'] {
+      color: black;
+      font-size: 25px;
+      cursor: pointer; }
+      .restau__palette [for='hpalette'] .unlocki {
+        display: none; }
+    .restau__palette #hpalette:checked + label {
+      background: -webkit-linear-gradient(#9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      will-change: font-size;
+      animation: heart 2s ease-in-out 0s;
+      transform-origin: center; }
+      .restau__palette #hpalette:checked + label .locki {
+        display: none;
+        position: absolute;
+        left: 15px; }
+      .restau__palette #hpalette:checked + label .unlocki {
+        display: inline; }
+  .restau__note {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+    position: relative; }
+    .restau__note img {
+      width: 100%;
+      height: 200px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover;
+      object-position: 50% 80%; }
+    .restau__note .gras {
+      font-family: "font-bold";
+      margin-left: 20px;
+      height: 28px;
+      margin-right: 30px;
+      display: flex;
+      justify-content: space-between; }
+    .restau__note .thin {
+      font-family: "font-thin";
+      margin-left: 20px;
+      margin-top: -12px;
+      padding-bottom: 10px; }
+    .restau__note:hover {
+      opacity: .6;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.658); }
+    .restau__note img {
+      object-position: 50% 60%; }
+    .restau__note #hnote {
+      position: absolute;
+      left: -100vw; }
+    .restau__note [for='hnote'] {
+      color: black;
+      font-size: 25px;
+      cursor: pointer; }
+      .restau__note [for='hnote'] .unlocki {
+        display: none; }
+    .restau__note #hnote:checked + label {
+      background: -webkit-linear-gradient(#9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      will-change: font-size;
+      animation: heart 2s ease-in-out 0s;
+      transform-origin: center; }
+      .restau__note #hnote:checked + label .locki {
+        display: none;
+        position: absolute;
+        left: 15px; }
+      .restau__note #hnote:checked + label .unlocki {
+        display: inline; }
+  .restau__fr {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+    position: relative; }
+    .restau__fr img {
+      width: 100%;
+      height: 200px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover;
+      object-position: 50% 80%; }
+    .restau__fr .gras {
+      font-family: "font-bold";
+      margin-left: 20px;
+      height: 28px;
+      margin-right: 30px;
+      display: flex;
+      justify-content: space-between; }
+    .restau__fr .thin {
+      font-family: "font-thin";
+      margin-left: 20px;
+      margin-top: -12px;
+      padding-bottom: 10px; }
+    .restau__fr:hover {
+      opacity: .6;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.658); }
+    .restau__fr #hfr {
+      position: absolute;
+      left: -100vw; }
+    .restau__fr [for='hfr'] {
+      color: black;
+      font-size: 25px;
+      cursor: pointer; }
+      .restau__fr [for='hfr'] .unlocki {
+        display: none; }
+    .restau__fr #hfr:checked + label {
+      background: -webkit-linear-gradient(#9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      will-change: font-size;
+      animation: heart 2s ease-in-out 0s;
+      transform-origin: center; }
+      .restau__fr #hfr:checked + label .locki {
+        display: none;
+        position: absolute;
+        left: 15px; }
+      .restau__fr #hfr:checked + label .unlocki {
+        display: inline; }
+  .restau__delice {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.233);
+    position: relative; }
+    .restau__delice img {
+      width: 100%;
+      height: 200px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover;
+      object-position: 50% 80%; }
+    .restau__delice .gras {
+      font-family: "font-bold";
+      margin-left: 20px;
+      height: 28px;
+      margin-right: 30px;
+      display: flex;
+      justify-content: space-between; }
+    .restau__delice .thin {
+      font-family: "font-thin";
+      margin-left: 20px;
+      margin-top: -12px;
+      padding-bottom: 10px; }
+    .restau__delice:hover {
+      opacity: .6;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.658); }
+    .restau__delice #hdelice {
+      position: absolute;
+      left: -100vw; }
+    .restau__delice [for='hdelice'] {
+      color: black;
+      font-size: 25px;
+      cursor: pointer; }
+      .restau__delice [for='hdelice'] .unlocki {
+        display: none; }
+    .restau__delice #hdelice:checked + label {
+      background: -webkit-linear-gradient(#9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      will-change: font-size;
+      animation: heart 2s ease-in-out 0s;
+      transform-origin: center; }
+      .restau__delice #hdelice:checked + label .locki {
+        display: none;
+        position: absolute;
+        left: 15px; }
+      .restau__delice #hdelice:checked + label .unlocki {
+        display: inline; }
+
+.foot {
+  background-color: rgba(0, 0, 0, 0.788);
+  color: white;
+  padding: 10px 20px 20px 25px; }
+  .foot__title {
+    font-family: "font-title";
+    font-size: 18px; }
+  .foot__parag {
+    line-height: 28px; }
+    .foot__parag a {
+      text-decoration: none;
+      color: white; }
+  .foot i {
+    padding-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */

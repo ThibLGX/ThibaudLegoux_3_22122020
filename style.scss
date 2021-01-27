@@ -21,6 +21,10 @@
         animation: loading 2s ease-in-out forwards;
         }
   }
+  @keyframes heart { 
+    0% {font-size: 0px; } 
+    }
+
   @keyframes backload{
       0%{
         z-index: 999;}
@@ -179,19 +183,150 @@ header{
     }
     &__palette{
         @include vignette;
+    
+        #hpalette {
+            position: absolute;
+            left: -100vw;
+          }
+          
+          [for='hpalette'] {
+            color: black;
+            font-size: 25px;
+            
+            
+            cursor: pointer;
+                .unlocki{
+                    display:none;
+                    } 
+            }
+          
+          #hpalette:checked + label {
+            background: -webkit-linear-gradient($primaire,$secondaire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            will-change: font-size;
+            animation: heart 2s ease-in-out 0s ;
+            transform-origin:center;
+            .locki{
+              display:none;
+              position: absolute;
+              left: 15px;
+                }
+            .unlocki{
+                display:inline;
+                } 
+          }
+         
+
     }
     &__note{
         @include vignette;
         img{
             object-position: 50% 60%;
         }
+        #hnote {
+            position: absolute;
+            left: -100vw;
+          }
+          
+          [for='hnote'] {
+            color: black;
+            font-size: 25px;
+            
+            
+            cursor: pointer;
+                .unlocki{
+                    display:none;
+                    } 
+            }
+          
+          #hnote:checked + label {
+            background: -webkit-linear-gradient($primaire,$secondaire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            will-change: font-size;
+            animation: heart 2s ease-in-out 0s ;
+            transform-origin:center;
+            .locki{
+              display:none;
+              position: absolute;
+              left: 15px;
+                }
+            .unlocki{
+                display:inline;
+                } 
+          }
+          
     }
     &__fr{
         @include vignette;
+        #hfr {
+            position: absolute;
+            left: -100vw;
+          }
+          
+          [for='hfr'] {
+            color: black;
+            font-size: 25px;
+            
+            
+            cursor: pointer;
+                .unlocki{
+                    display:none;
+                    } 
+            }
+          
+          #hfr:checked + label {
+            background: -webkit-linear-gradient($primaire,$secondaire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            will-change: font-size;
+            animation: heart 2s ease-in-out 0s ;
+            transform-origin:center;
+            .locki{
+              display:none;
+              position: absolute;
+              left: 15px;
+                }
+            .unlocki{
+                display:inline;
+                } 
+          }
     }
     &__delice{
         @include vignette;
-
+        #hdelice {
+            position: absolute;
+            left: -100vw;
+          }
+          
+          [for='hdelice'] {
+            color: black;
+            font-size: 25px;
+            
+            
+            cursor: pointer;
+                .unlocki{
+                    display:none;
+                    } 
+            }
+          
+          #hdelice:checked + label {
+            background: -webkit-linear-gradient($primaire,$secondaire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            will-change: font-size;
+            animation: heart 2s ease-in-out 0s ;
+            transform-origin:center;
+            .locki{
+              display:none;
+              position: absolute;
+              left: 15px;
+                }
+            .unlocki{
+                display:inline;
+                } 
+          }
     }
 }
 .foot{

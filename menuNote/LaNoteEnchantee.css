@@ -154,25 +154,29 @@ header {
     font-family: "mfont-title", Arial, Helvetica, sans-serif;
     font-size: 26px;
     padding-left: 20px; }
-    .menu__title .lock {
-      text-decoration: none;
+    .menu__title #heart {
+      position: absolute;
+      left: -100vw; }
+    .menu__title [for='heart'] {
       color: black;
-      position: relative;
-      padding-left: 30px; }
-      .menu__title .lock i {
-        position: absolute;
-        top: 5px;
-        left: 37px; }
-    .menu__title .lock:hover #lock,
-    .menu__title .lock #unlock {
-      display: none;
-      background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+      font-size: 25px;
+      cursor: pointer; }
+      .menu__title [for='heart'] .unlocki {
+        display: none; }
+    .menu__title #heart:checked + label {
+      background: -webkit-linear-gradient(#9356DC, #FF79DA);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    .menu__title .lock:hover #unlock {
-      animation: rempl 2s ease-in-out 0s forwards;
-      transform-origin: center;
-      display: inline; }
+      -webkit-text-fill-color: transparent;
+      will-change: font-size;
+      animation: heart 2s ease-in-out 0s;
+      transform-origin: center; }
+      .menu__title #heart:checked + label .locki {
+        display: none; }
+      .menu__title #heart:checked + label .unlocki {
+        display: inline; }
+@keyframes heart {
+  0% {
+    font-size: 0px; } }
   .menu__starter {
     margin: 0 20px 0 20px; }
     .menu__starter__title {

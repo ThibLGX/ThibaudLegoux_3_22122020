@@ -33,6 +33,7 @@
     background-color: #F2F2F2;
     &__title{
         @include titlemenu;
+        
     }
     
     
@@ -40,6 +41,7 @@
         margin: 0 20px 0 20px;
         &__title{
             @include titlemaj;
+
         }
         &__one {
             @include thumb;
