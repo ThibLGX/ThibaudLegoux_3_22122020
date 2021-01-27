@@ -26,6 +26,7 @@
             margin-right: 15px;
             margin-bottom: 25px;
             i{
+                display: ;
                 color: rgba(0, 0, 0, 0.705);
                 padding-right: 25px;
                 font-size: 20px;
@@ -78,14 +79,14 @@
             bottom: 20px;
             font-size: 25px;
         }
-        .lock:hover #lock,
-        .lock #unlock {
+        .lock:hover .locki,
+        .lock .unlocki {
         display: none;
         background: -webkit-gradient(linear, left top, left bottom, from($primaire), to($secondaire));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         }
-        .lock:hover #unlock {
+        .lock:hover .unlocki {
         animation: rempl 2s ease-in-out 0s forwards;
         transform-origin: center;
         display: inline;

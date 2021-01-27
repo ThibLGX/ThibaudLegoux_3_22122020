@@ -11,15 +11,15 @@
     display: flex;
     justify-content: center;
     padding-top: 20%;
-    &__cercle{
-    border: 16px solid $primaire;
-    border-top: 16px solid $secondaire; 
-    border-radius: 50%;
-    margin-top: 200px;
-    width: 120px;
-    height: 120px;
-    animation: loading 2s ease-in-out forwards;
-    }
+        &__cercle{
+        border: 16px solid $primaire;
+        border-top: 16px solid $secondaire; 
+        border-radius: 50%;
+        margin-top: 200px;
+        width: 120px;
+        height: 120px;
+        animation: loading 2s ease-in-out forwards;
+        }
   }
   @keyframes backload{
       0%{
